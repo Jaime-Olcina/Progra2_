@@ -1,0 +1,1 @@
+Obtener el resultado de elevar N a M.

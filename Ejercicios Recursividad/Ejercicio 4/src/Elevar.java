@@ -1,12 +1,11 @@
 public class Elevar {
-    public static int Potencia(int i, int j){
-        if j==0 {
-            return 1
-        }else if j == 1 {
-            return i
+    public static int Potencia(int n, int m){
+        if(m == 0){
+            return 1;
+        }else if(m == 1) {
+            return n;
         }else{
-            return i * Potencia( i,j-1)
-        }
+            return n * Potencia(n, m -1);
         }
     }
 }

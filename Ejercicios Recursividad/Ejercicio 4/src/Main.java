@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        int elevado = Elevar.Potencia(2,3)
+        int n = 5;
+        int m = 3;
 
-                System.out.println("El numero que da al elevar " + i + " a " + j + " es " + elevado);
-        }
+        int elevado = Elevar.Potencia(n,m);
+
+                System.out.println("El numero que da al elevar " + n + " a " + m + " es " + elevado);
     }
 }
