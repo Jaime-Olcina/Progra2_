@@ -7,8 +7,8 @@ public class Main {
 
         System.out.println("La suma natural desde 1 hasta " + n + " es " + suma);
 
-        int sumaMem = NoMem_Sumatorio.SumaNaturalSinMemoria(0,0); //el acumulador siempre tiene que estar inicializado a 0
+        int sumaMem = NoMem_Sumatorio.SumaNaturalSinMemoria(9,0); //el acumulador siempre tiene que estar inicializado a 0
 
-        System.out.println("La suma natural desde 1 hasta " + n + " es " + suma);
+        System.out.println("La suma natural desde 1 hasta " + n + " es " + sumaMem);
     }
 }
