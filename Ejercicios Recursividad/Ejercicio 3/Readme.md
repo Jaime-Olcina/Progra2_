@@ -1,0 +1,1 @@
+Obtener el producto escalar de dos vectores del mismo tamaño.
