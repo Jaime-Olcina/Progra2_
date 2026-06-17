@@ -1,0 +1,1 @@
+Comprobar si una palabra es un palíndromo (se puede leer de forma normal o al revés y no cambia)
