@@ -1,0 +1,1 @@
+Comprobar que una palabra esté ordenada alfabéticamente.
