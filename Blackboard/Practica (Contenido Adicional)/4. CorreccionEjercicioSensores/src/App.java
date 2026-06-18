@@ -21,9 +21,8 @@ public class App {
 
     public static double funcion2(ArrayList<LecturaSensor> lecturas) {
         long numero_medidas_24 = lecturas.stream()
-                       .filter((x) -> {
-                            return Duration.between(x.timestamp, LocalDateTime.now()).getSeconds() <= 86400; 
-                       }).count();
+                       .filter((x) -> return Duration.between(x.timestamp, LocalDateTime.now()).getSeconds() <= 86400;})
+                       .count();
 
         lecturas.size();
 
