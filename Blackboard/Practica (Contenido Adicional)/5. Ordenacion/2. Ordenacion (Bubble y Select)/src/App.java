@@ -5,9 +5,13 @@ public class App {
 
         array = bubbleSort(array);
 
-        for (int elem : array) {
+        for (int elem : array) { //Basicamente es un each-for que funciona internamente como el "//for" justo debajo
             System.out.println(elem);
         }
+//for (int i = 0; i < array.length; i++) {
+//int elem = array[i];
+//System.out.println(elem);
+//}
         
     }
 
