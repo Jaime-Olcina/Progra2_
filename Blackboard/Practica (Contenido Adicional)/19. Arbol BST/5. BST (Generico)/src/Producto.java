@@ -8,6 +8,10 @@ public class Producto implements Comparable<Producto> {
         this.stock = stock;
     }
 
+    public int getId(){
+        return this.id;
+    }
+
     @Override
     public String toString() {
         return String.valueOf(id) + " " + nombre + " " + String.valueOf(stock);

@@ -41,4 +41,16 @@ public class BST<T extends Comparable<T>> {
         System.out.println(raiz);
         inOrderAux(raiz.dcha);
     }
+    public int altura() {
+        return alturaAux(raiz);
+    }
+
+    private int alturaAux(Nodo<T> raiz) {
+        if(raiz == null) return 0;
+
+        int alt_izq = alturaAux(raiz.izq);
+        int alt_dcha = alturaAux(raiz.dcha);
+
+        return Math.max(alt_izq, alt_dcha) + 1;
+    }
 }

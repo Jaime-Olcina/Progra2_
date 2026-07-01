@@ -1,7 +1,7 @@
 
 
 public class Nodo<T> implements Comparable<Nodo<T>> {
-    
+
     T prod;
     Nodo<T> izq, dcha;
 

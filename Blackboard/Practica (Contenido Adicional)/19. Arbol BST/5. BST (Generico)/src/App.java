@@ -1,4 +1,5 @@
 
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 
@@ -31,7 +32,7 @@ public class App {
         arbol3.insert("viga");
 
         arbol3.inOrder();
-
+        System.out.println(arbol3.altura());
 
         TreeSet<Producto> tree = new TreeSet<>();
         tree.add(new Producto(0, "vigas", 15));
@@ -39,6 +40,18 @@ public class App {
         tree.add(new Producto(2, "acero", 30));
 
         System.out.println(tree);
+
+        TreeMap<Integer, Producto> tree4 = new TreeMap<>();
+
+        Producto p1 = new Producto(0, "vigas", 15);
+        Producto p2 = new Producto(5, "cemento", 210);
+        Producto p3 = new Producto(2, "acero", 30);
+
+        tree4.put(p1.getId(), p1);
+        tree4.put(p2.getId(), p2);
+        tree4.put(p3.getId(), p3);
+
+        System.out.println(tree4);
     }
 }
 

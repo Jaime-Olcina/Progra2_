@@ -2,12 +2,18 @@ package alberto;
 
 import static org.junit.Assert.*;
 import java.util.Random;
-
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 
-public class AppTest  {
+public class AppTest  { //Conjunto de pruebas para la app
+    Random r;
+
+    @Before
+    public void inicializar(){
+        r = new Random();
+    }
 
     @Test
     public void comprobarFuncBasico() {
@@ -18,9 +24,19 @@ public class AppTest  {
 
     @Test
     public void comprobarElevarCero() {
-        Random r = new Random();  
         int result = App.elevar(r.nextInt(), 0);
 
         assertTrue(result == 1);
     }
+
+    @Test
+    public void comprobarDividir0(){
+        try {
+            int result = App.dividir(r.nextInt(), 0);
+            fail();
+        }
+        catch(Exception e) {
+            assertNotNull(e);
+        }
+        }
 }
